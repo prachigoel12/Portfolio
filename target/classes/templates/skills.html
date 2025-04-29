@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Skills</title>
+    <style>
+		body {
+		    font-family: 'Segoe UI', sans-serif;
+		    margin: 0;
+		    padding: 0;
+		    background-color: #f7f9fc;
+		    color: #333;
+		}
+
+		header {
+		    background-color: #ffc107;
+		    color: white;
+		    padding: 20px;
+		    text-align: center;
+		}
+
+		header h1 {
+		    margin: 0;
+		    font-size: 2.5em;
+		}
+
+		main {
+		    max-width: 800px;
+		    margin: 40px auto;
+		    padding: 30px;
+		    background-color: white;
+		    border-radius: 10px;
+		    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+		}
+
+		h2 {
+		    color: #ffc107;
+		    margin-bottom: 10px;
+		}
+
+		ul {
+		    
+		    padding-left: 20px;
+		    font-size: 1.1em;
+		}
+
+		li {
+		    margin-bottom: 8px;
+		}
+
+		footer {
+		    background-color: #ffc107;
+		    color: white;
+		    text-align: center;
+		    padding: 15px;
+		    margin-top: 40px;
+		}
+
+		footer a {
+		    color: #fff;
+		    text-decoration: underline;
+		}
+
+	</style>>
+</head>
+<body>
+<header><h1>Skills</h1></header>
+<main>
+    <h2>Technical Skills</h2>
+    <ul>
+        <li>
+			<strong>Programming Language:</strong> 
+			Java, C, C++, Go, Python, Object Oriented Programming, Data Structures & Algorithm, Competitive Coding
+			</li>
+			<li>
+				<strong>Java Development:</strong> 
+				Spring Boot Framework (Backend)
+			</li>
+			<liv>
+				<strong>Web Development Language:</strong>
+				HTML, CSS, JavaScript, Node.js, React, Angular15 
+			</liv> 
+			<li>
+				<b>Expertise Area :</b>
+				Operating Systems, DBMS, SQL, MongoDB , AWS Cloud Computing
+			</li>
+		 	<li>
+				<strong>Open-Source Tools:</strong>
+				Visual Studio Code, Git, Jenkins
+			</li>
+			<li>
+				<strong>MS Family:</strong>
+				MS- Excel, Power BI, MS- Word
+			</li>
+			 
+
+        
+    </ul>
+    <h2>Soft Skills</h2>
+    <ul>
+        <li>Problem Solving and critical thinking</li>
+        <li>Team leadership with proactive decision-making</li>
+        <li>Strong communication and collaboration skills</li>
+		<li>Effective time management and prioritization</li>
+		<li>Adaptability and willingness to learn new technologies</li>
+		<li>Attention to detail and accuracy</li>
+    </ul>
+</main>
+<footer><a th:href="@{/}">Back to Home</a></footer>
+</body>
+</html>

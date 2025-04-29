@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>About Me</title>
+    <style>
+		body {
+		    font-family: 'Segoe UI', sans-serif;
+		    margin: 0;
+		    padding: 0;
+		    background-color: #e9ecef;
+		    color: #333;
+		}
+
+		header {
+		    background-color: #17a2b8;
+		    color: white;
+		    padding: 20px;
+		    text-align: center;
+		}
+
+		header h1 {
+		    margin: 0;
+		    font-size: 2.5em;
+		}
+
+		main {
+		    max-width: 800px;
+		    margin: 40px auto;
+		    padding: 30px;
+		    background-color: white;
+		    border-radius: 10px;
+		    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		}
+
+		main p {
+		    font-size: 1.2em;
+		    line-height: 1.8;
+		}
+
+		footer {
+		    background-color: #17a2b8;
+		    color: white;
+		    text-align: center;
+		    padding: 15px;
+		    margin-top: 40px;
+		}
+
+		footer a {
+		    color: #fff;
+		    text-decoration: underline;
+		}
+
+	</style>>
+</head>
+<body>
+<header><h1>About Me</h1></header>
+<main>
+    <p>
+    As a Computer Science Student, I am specialized in software development, data structures, and algorithms. Proven experience in developing web applications and mobile apps, demonstrating abilities in full-stack development and project management. I am an avid learner and user of technology, enjoys applying my knowledge towards solving problems while working in teams. Seeking an entry-level position at a forward-thinking tech company to leverage my technical knowledge and problem-solving skills in a dynamic environment.</p>
+</main>
+<footer><a th:href="@{/}">Back to Home</a></footer>
+</body>
+</html>

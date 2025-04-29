@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Contact Me</title>
+    <style>
+		body {
+		    font-family: 'Segoe UI', sans-serif;
+		    margin: 0;
+		    padding: 0;
+		    background-color: #f4f6f8;
+		    color: #333;
+		}
+
+		header {
+		    background-color: #28a745;
+		    color: white;
+		    padding: 20px;
+		    text-align: center;
+		}
+
+		header h1 {
+		    margin: 0;
+		    font-size: 2.5em;
+		}
+
+		main {
+		    max-width: 600px;
+		    margin: 40px auto;
+		    padding: 30px;
+		    background-color: white;
+		    border-radius: 10px;
+		    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		}
+
+		form label {
+		    display: block;
+		    margin-top: 15px;
+		    font-weight: bold;
+		}
+
+		form input,
+		form textarea {
+		    width: 100%;
+		    padding: 10px;
+		    margin-top: 5px;
+		    border: 1px solid #ccc;
+		    border-radius: 5px;
+		    font-size: 1em;
+		}
+
+		form button {
+		    margin-top: 20px;
+		    padding: 10px 20px;
+		    background-color: #28a745;
+		    border: none;
+		    color: white;
+		    font-size: 1em;
+		    border-radius: 5px;
+		    cursor: pointer;
+		    transition: background-color 0.3s ease;
+		}
+
+		form button:hover {
+		    background-color: #218838;
+		}
+
+		.success-msg {
+		    margin-top: 20px;
+		    font-weight: bold;
+		    color: #155724;
+		    background-color: #d4edda;
+		    padding: 10px;
+		    border-radius: 5px;
+		}
+
+
+		footer {
+		    text-align: center;
+		    padding: 15px;
+		    background-color: #28a745;
+		    color: white;
+		    margin-top: 40px;
+		}
+
+		footer a {
+		    color: #fff;
+		    text-decoration: underline;
+		}
+
+	</style>
+</head>
+<body><!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Contact Me</title>
+    <style>
+		body {
+		    font-family: 'Segoe UI', sans-serif;
+		    margin: 0;
+		    padding: 0;
+		    background-color: #f4f6f8;
+		    color: #333;
+		}
+
+		header {
+		    background-color: #28a745;
+		    color: white;
+		    padding: 20px;
+		    text-align: center;
+		}
+
+		header h1 {
+		    margin: 0;
+		    font-size: 2.5em;
+		}
+
+		main {
+		    max-width: 600px;
+		    margin: 40px auto;
+		    padding: 30px;
+		    background-color: white;
+		    border-radius: 10px;
+		    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		}
+
+		form label {
+		    display: block;
+		    margin-top: 15px;
+		    font-weight: bold;
+		}
+
+		form input,
+		form textarea {
+		    width: 100%;
+		    padding: 10px;
+		    margin-top: 5px;
+		    border: 1px solid #ccc;
+		    border-radius: 5px;
+		    font-size: 1em;
+		}
+
+		form button {
+		    margin-top: 20px;
+		    padding: 10px 20px;
+		    background-color: #28a745;
+		    border: none;
+		    color: white;
+		    font-size: 1em;
+		    border-radius: 5px;
+		    cursor: pointer;
+		    transition: background-color 0.3s ease;
+		}
+
+		form button:hover {
+		    background-color: #218838;
+		}
+
+		.success-msg {
+		    margin-top: 20px;
+		    font-weight: bold;
+		    color: #155724;
+		    background-color: #d4edda;
+		    padding: 10px;
+		    border-radius: 5px;
+		}
+
+
+		footer {
+		    text-align: center;
+		    padding: 15px;
+		    background-color: #28a745;
+		    color: white;
+		    margin-top: 40px;
+		}
+
+		footer a {
+		    color: #fff;
+		    text-decoration: underline;
+		}
+
+	</style>
+</head>
+<body>
+<header><h1>Contact Me</h1></header>
+<main>
+	<form th:action="@{/contact}" method="post">
+	    <label>Name:</label>
+	    <input type="text" name="name" required /><br/>
+
+	    <label>Email:</label>
+	    <input type="email" name="email" required /><br/>
+
+	    <label>Message:</label><br/>
+	    <textarea name="message" rows="5" required></textarea><br/>
+
+	    <button type="submit">Send</button>
+	</form>
+
+
+	<p class="success-msg" th:if="${msg}" th:text="${msg}"></p>
+
+</main>
+<footer><a th:href="@{/}">Back to Home</a></footer>
+</body>
+</html>
+

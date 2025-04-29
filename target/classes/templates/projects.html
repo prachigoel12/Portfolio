@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Projects</title>
+    <style>
+		body {
+		    font-family: 'Segoe UI', sans-serif;
+		    margin: 0;
+		    padding: 0;
+		    background-color: #f0f2f5;
+		    color: #333;
+		}
+
+		header {
+		    background-color: #6c63ff;
+		    color: white;
+		    padding: 20px;
+		    text-align: center;
+		}
+
+		header h1 {
+		    margin: 0;
+		    font-size: 2.5em;
+		}
+
+		main {
+		    padding: 40px;
+		    max-width: 900px;
+		    margin: auto;
+		}
+
+		section {
+		    background-color: white;
+		    margin-bottom: 30px;
+		    padding: 25px;
+		    border-radius: 10px;
+		    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		section h2 {
+		    margin-top: 0;
+		    color: #6c63ff;
+		}
+
+		section p {
+		    margin: 10px 0;
+		    font-size: 1.1em;
+		}
+
+		section a {
+		    display: inline-block;
+		    margin-top: 10px;
+		    color: #6c63ff;
+		    text-decoration: none;
+		    font-weight: bold;
+		}
+
+		section a:hover {
+		    text-decoration: underline;
+		}
+
+		footer {
+		    background-color: #6c63ff;
+		    color: white;
+		    text-align: center;
+		    padding: 15px;
+		    margin-top: 40px;
+		}
+
+		footer a {
+		    color: #fff;
+		    text-decoration: underline;
+		}
+
+		@media (max-width: 600px) {
+		    main {
+		        padding: 20px;
+		    }
+
+		    section {
+		        padding: 15px;
+		    }
+		}
+
+	</style>>
+</head>
+<body>
+<header><h1>My Projects</h1></header>
+<main>
+	<section>
+	       <h2>Portfolio Website</h2>
+	       <ul>
+			<li>
+					Developed a personal portfolio website using Spring Boot, Thymeleaf, HTML, and CSS to showcase projects and skills.
+				</li>
+				<li>	
+					Implemented a contact form with backend integration, saving messages securely to a database using JPA and MySQL.
+				</li>
+				<li>
+					Designed a fully responsive, user-friendly UI with optimized navigation to enhance the user experience across devices.
+				</li>
+		</ul>
+		
+		
+	       <a href="https://github.com/your-username/task-manager" target="_blank">View on GitHub</a>
+	   </section>
+
+    <section>
+        <h2>Online Dict App</h2>
+        <ul>
+			<li>
+					Designed a Online Dictionary App implemented by using spring boot MVC for the admin to use.
+				</li>
+				<li>	
+					Connected RESTful APIs with an HTTP server, executed queries on an SQL database, use Thyme leaf for frontend and displayed the obtained results on a user-friendly web interface.
+				</li>
+		</ul>
+		
+		
+        <a href="https://github.com/prachigoel12/onlineDictApp" target="_blank">View on GitHub</a>
+    </section>
+	<section>
+	      <h2>Gaming Platform</h2>
+	      <ul>
+			<li>
+					Designed a gaming platform by using hands on knowledge of Object-Oriented Programming in Java 
+				</li>
+				<li>	
+					Debugged coding issues and implemented feedback to update code and deployed code through Git.				
+				</li>
+				<li>
+					Implemented Data structure & algorithm, and java fundamentals to optimize gaming performance.
+				</li>
+		</ul>
+		
+		
+	      <a href="https://github.com/prachigoel12/GamingPlatform" target="_blank">View on GitHub</a>
+	  </section>
+	  <section>
+	        <h2>Login Authentication</h2>
+	        <ul>
+	  		<li>
+	  				Created a Login Authentication Web page with HTML, CSS, JavaScript, React and Node.js
+	  			</li>
+	  			<li>	
+	  					Implemented user registration and login with secure password by hashing & validation techniques, stored in DB.
+	  			</li>
+				<li>
+						Integrated code with development environments such as GitHub, Visual Studio Code for the successful deployment.
+				</li>
+	  	</ul>
+	  	
+	  	
+	        <a href="https://github.com/prachigoel12/LoginAuth" target="_blank">View on GitHub</a>
+	    </section>
+		<section>
+		      <h2>Student Enrolment Form </h2>
+		      <ul>
+				<li>
+					Worked towards creating a site from scratch that helps student to register, select, & participate in hackathon. 					
+				</li>
+					<li>	
+						As a team leader, I was involved in organizing discussions and helping teammates with programming related doubts.
+					</li>
+					<li>
+						Tools Used: HTML, CSS, JavaScript, TypeScript, Angular 15, Node.js
+					</li>
+			</ul>
+			
+			
+		      <a href="https://github.com/prachigoel12/StudentEnrollerForm" target="_blank">View on GitHub</a>
+		  </section>
+</main>
+<footer><a th:href="@{/}">Back to Home</a></footer>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>My Portfolio</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style>
+		body {
+		    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		    margin: 0;
+		    padding: 0;
+		    background-color: #f8f9fa;
+		    color: #333;
+		}
+
+		header {
+		    background-color: #007BFF;
+		    padding: 30px 20px;
+		    text-align: center;
+		    color: white;
+		}
+
+		header h1 {
+		    margin: 0;
+		    font-size: 2.5em;
+		}
+
+		nav {
+		    display: flex;
+		    justify-content: center;
+		    background-color: #343a40;
+		    flex-wrap: wrap;
+		}
+
+		nav a {
+		    color: white;
+		    padding: 14px 20px;
+		    text-decoration: none;
+		    text-transform: uppercase;
+		    font-weight: bold;
+		}
+
+		nav a:hover {
+		    background-color: #495057;
+		}
+
+		main {
+		    padding: 30px;
+		    text-align: center;
+			background-image: url("https://images.unsplash.com/photo-1518655048521-f130df041f66?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D");
+			
+		}
+
+		main p {
+		    font-size: 1.2em;
+		    line-height: 1.6;
+		}
+
+		footer {
+		    background-color: #007BFF;
+		    color: white;
+		    text-align: center;
+		    padding: 15px 0;
+		    position: relative;
+		    bottom: 0;
+		    width: 100%;
+		}
+
+		@media screen and (max-width: 600px) {
+		    header h1 {
+		        font-size: 2em;
+		    }
+
+		    nav {
+		        flex-direction: column;
+		    }
+
+		    nav a {
+		        padding: 10px;
+		    }
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<h1>
+			Welcome to My Portfolio
+		</h1>
+	</header>
+	<nav>
+		<a th:href="@{/about}">About</a>
+		<a th:href="@{/skills}">Skills</a>
+		<a th:href="@{/projects}">Projects</a> 
+		<a th:href="@{/contact}">Contact</a>
+	</nav>
+	<main>
+		<p>This is my Professional Portfolio Homepage</p>
+		<p style="color:gray"><b>Hi! I'm Prachi Goel
+		<br>A Computer Science Student specialisation with Artifical Intelligence and Machine Learning, <br>currently pursuing my B.tech from KIET Group of Institutions
+		(Ghaziabad).</b>
+		</p>
+	</main>
+	<footer>
+		© 2025 Prachi Goel
+	</footer>
+</body>
+</html>
