@@ -1,6 +1,6 @@
 # portfolio
-# A personal portfolio website built with Spring Boot, Thymeleaf, HTML/CSS, and Java, showcasing my skills, projects, and experience.
-# It includes a working contact form to collect visitor messages securely, saving submissions into a database via JPA.
+ A personal portfolio website built with Spring Boot, Thymeleaf, HTML/CSS, and Java, showcasing my skills, projects, and experience.
+ It includes a working contact form to collect visitor messages securely, saving submissions into a database via JPA.
 
 # Features-
 1. Home, About, Skills, Projects, and Contact pages
