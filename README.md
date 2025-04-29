@@ -34,16 +34,16 @@ com.example.portfolio
 2. Open the project:
    Use an IDE like IntelliJ IDEA or Eclipse that supports Maven and Spring Boot.
 3. Set up the database
-   a. Create a database(e.g, in MySQL) namd- portfoliodb
-   b. Update src/main/resources/application.properties with your database credentials:
-         spring.datasource.url=jdbc:mysql://localhost:3306/portfoliodb
-         spring.datasource.username=root
-         spring.datasource.password=
-         spring.jpa.hibernate.ddl-auto=update
+   1. Create a database(e.g, in MySQL) namd- portfoliodb
+   2. Update src/main/resources/application.properties with your database credentials:
+        1. spring.datasource.url=jdbc:mysql://localhost:3306/portfoliodb
+        2. spring.datasource.username=root
+        3. spring.datasource.password=
+        4. spring.jpa.hibernate.ddl-auto=update
  4. Build and run the Application:
-    a. If using command line:
+    1. If using command line:
           ./mvnw spring-boot:run
-    b.   Or simply click the Run button in your IDE on the MainApplication class.
+    2.   Or simply click the Run button in your IDE on the MainApplication class.
 5. Access the website:
     http://localhost:8897
  
