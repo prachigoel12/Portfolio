@@ -10,22 +10,22 @@
 5. Organized code structure following MVC architecture
 
 # Tech Stack
--> Java, Spring Boot
--> Thymeleaf
--> HTML5, CSS3
--> MySQL/ H2 Database(during development)
--> Maven(Build Tool)
+1. Java, Spring Boot
+2. Thymeleaf
+3. HTML5, CSS3
+4. MySQL/ H2 Database(during development)
+5. Maven(Build Tool)
 
 # Project Structure
 com.example.portfolio
 │
-├── controller
-├── model
-├── repository
-├── service
-└── resources
-    ├── templates
-    └── static
+1. controller 
+2. model
+3. repository
+4. service
+5. resources
+    1. templates
+    2. static
 
 # Installation and Run Locally
 1. Clone the repository:
